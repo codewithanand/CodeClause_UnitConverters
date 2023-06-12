@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #222;
+}
+nav .logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+nav .logo .logoFirst{color: #fff;}
+nav .logo .logoLast{color: #ffcbcb;}
+
+main{
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .converter{
+    width: 1024px;
+}
+
+main .tabs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+main .tabs .tabItems{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    background-color: #222;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+main .tabs .tabItems:hover{
+    color: #222;
+    background-color: #f7f7f7;
+}
+main .tabs .tabItems.active{
+    border-bottom: none;
+    color: #222;
+    background-color: #f7f7f7;
+}
+
+main .tabContent{
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+main .tabContent .tabContentInputs{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+main .tabContent .tabContentInputs>input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+main .tabContent .tabContentLists{
+    display: none;
+}
+main .tabContent .tabContentLists.active{
+    display: flex;
+    gap: 20px;
+}
+main .tabContent .tabContentLists>select{
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-family: inherit;
+}
+main .tabContent .tabContentLists>select::-webkit-scrollbar{
+    display: none;
+}
+
+main .tabContent .tabContentResult{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77px;
+    background-color: #111;
+    color: white;
+}

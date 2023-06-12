@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span class="logoFirst">Unit</span>
+            <span class="logoLast">Converters</span>
+        </div>
+    </nav>
+    <main>
+        <div class="converter">
+            <div class="tabs">
+                <div class="tabItems active">Length</div>
+                <div class="tabItems">Temperature</div>
+                <div class="tabItems">Area</div>
+                <div class="tabItems">Volume</div>
+                <div class="tabItems">Weight</div>
+                <div class="tabItems">Time</div>
+            </div>
+            <div id="lengthTab" class="tabContent">
+                <div class="tabContentInputs">
+                    <input type="text" placeholder="From" id="inputValue">
+                    <input type="text" placeholder="To" id="outputValue" disabled>
+                </div>
+                <!-- LENGTH TAB -->
+                <div class="tabContentLists active">
+                    <select id="fromUnitLength" size="15" class="fromList">  
+                        <option value="meter">Meter</option> 
+                        <option value="kilometer">Kilometer</option> 
+                        <option value="centimeter">Centimeter</option> 
+                        <option value="millimeter">Millimeter</option> 
+                        <option value="micrometer">Micrometer</option>
+                        <option value="nanometer">Nanometer</option>  
+                        <option value="mile">Mile</option> 
+                        <option value="yard">Yard</option> 
+                        <option value="foot">Foot</option> 
+                        <option value="inch">Inch</option> 
+                        <option value="lightyear">Light Year</option> 
+                    </select>
+                    <select id="toUnitLength" size="15" class="toList">  
+                        <option value="meter">Meter</option> 
+                        <option value="kilometer">Kilometer</option> 
+                        <option value="centimeter">Centimeter</option> 
+                        <option value="millimeter">Millimeter</option> 
+                        <option value="micrometer">Micrometer</option>
+                        <option value="nanometer">Nanometer</option>  
+                        <option value="mile">Mile</option> 
+                        <option value="yard">Yard</option> 
+                        <option value="foot">Foot</option> 
+                        <option value="inch">Inch</option> 
+                        <option value="lightyear">Light Year</option> 
+                    </select>  
+                </div>
+                <!-- TEMPERATURE TAB -->
+                <div class="tabContentLists">
+                    <select id="fromUnitTemp" size="15" class="fromList">  
+                        <option value="celsius">Celsius</option> 
+                        <option value="kelvin">Kelvin</option> 
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+                    <select id="toUnitTemp" size="15" class="toList">  
+                        <option value="celsius">Celsius</option> 
+                        <option value="kelvin">Kelvin</option> 
+                        <option value="fahrenheit">Fahrenheit</option> 
+                    </select>
+                </div>
+                <!-- AREA TAB -->
+                <div class="tabContentLists">
+                    <select id="fromUnitArea" size="15" class="fromList">  
+                        <option value="sqmeter">Square Meter</option> 
+                        <option value="sqkilometer">Square Kilometer</option> 
+                        <option value="sqcentimeter">Square Centimeter</option> 
+                        <option value="sqmillimeter">Square Millimeter</option> 
+                        <option value="sqmicrometer">Square Micrometer</option>
+                        <option value="hectare">Hectare</option>  
+                        <option value="sqmile">Square Mile</option> 
+                        <option value="sqyard">Square Yard</option> 
+                        <option value="sqfoot">Square Foot</option> 
+                        <option value="sqinch">Square Inch</option> 
+                        <option value="acre">Acre</option> 
+                    </select>
+                    <select id="toUnitArea" size="15" class="toList">  
+                        <option value="sqmeter">Square Meter</option> 
+                        <option value="sqkilometer">Square Kilometer</option> 
+                        <option value="sqcentimeter">Square Centimeter</option> 
+                        <option value="sqmillimeter">Square Millimeter</option> 
+                        <option value="sqmicrometer">Square Micrometer</option>
+                        <option value="hectare">Hectare</option>  
+                        <option value="sqmile">Square Mile</option> 
+                        <option value="sqyard">Square Yard</option> 
+                        <option value="sqfoot">Square Foot</option> 
+                        <option value="sqinch">Square Inch</option> 
+                        <option value="acre">Acre</option> 
+                    </select> 
+                </div>
+                <!-- VOLUME TAB -->
+                <div class="tabContentLists">
+                    <select id="fromUnitVolume" size="15" class="fromList">  
+                        <option value="cumeter">Cubic Meter</option> 
+                        <option value="cukilometer">Cubic Kilometer</option> 
+                        <option value="cucentimeter">Cubic Centimeter</option> 
+                        <option value="cumillimeter">Cubic Millimeter</option> 
+                        <option value="litre">Litre</option>  
+                        <option value="millilitre">Millilitre</option>
+                        <option value="gallon">US Gallon</option>
+                        <option value="cumile">Cubic Mile</option>  
+                        <option value="cuyard">Cubic Yard</option> 
+                        <option value="cufoot">Cubic Foot</option> 
+                        <option value="cuinch">Cubic Inch</option> 
+                    </select>
+                    <select id="toUnitVolume" size="15" class="toList">  
+                        <option value="cumeter">Cubic Meter</option> 
+                        <option value="cukilometer">Cubic Kilometer</option> 
+                        <option value="cucentimeter">Cubic Centimeter</option> 
+                        <option value="cumillimeter">Cubic Millimeter</option> 
+                        <option value="litre">Litre</option>  
+                        <option value="millilitre">Millilitre</option>
+                        <option value="gallon">US Gallon</option>
+                        <option value="cumile">Cubic Mile</option>  
+                        <option value="cuyard">Cubic Yard</option> 
+                        <option value="cufoot">Cubic Foot</option> 
+                        <option value="cuinch">Cubic Inch</option>  
+                    </select>
+                </div>
+                <!-- WEIGHT TAB -->
+                <div class="tabContentLists">
+                    <select id="fromUnitWeight" size="15" class="fromList">  
+                        <option value="kilogram">Kilogram</option> 
+                        <option value="gram">Gram</option> 
+                        <option value="milligram">Milligram</option> 
+                        <option value="metricton">Metric Ton</option> 
+                        <option value="longton">Long Ton</option>  
+                        <option value="shortton">Short Ton</option>
+                        <option value="pound">Pound</option>  
+                        <option value="ounce">Ounce</option> 
+                        <option value="carrat">Carrat</option> 
+                        <option value="amu">Atomic Mass Unit</option> 
+                    </select>
+                    <select id="toUnitWeight" size="15" class="toList">  
+                        <option value="kilogram">Kilogram</option> 
+                        <option value="gram">Gram</option> 
+                        <option value="milligram">Milligram</option> 
+                        <option value="metricton">Metric Ton</option> 
+                        <option value="longton">Long Ton</option>  
+                        <option value="shortton">Short Ton</option>
+                        <option value="pound">Pound</option>  
+                        <option value="ounce">Ounce</option> 
+                        <option value="carrat">Carrat</option> 
+                        <option value="amu">Atomic Mass Unit</option> 
+                    </select>
+                </div>
+                <!-- TIME TAB -->
+                <div class="tabContentLists">
+                    <select id="fromUnitTime" size="15" class="fromList">  
+                        <option value="second">Second</option> 
+                        <option value="millisecond">Millisecond</option> 
+                        <option value="microsecond">Microsecond</option> 
+                        <option value="nanosecond">Nanosecond</option> 
+                        <option value="picosecond">Picosecond</option>  
+                        <option value="minute">Minute</option>
+                        <option value="hour">Hour</option>  
+                        <option value="day">Day</option> 
+                        <option value="week">Week</option> 
+                        <option value="month">Month</option> 
+                        <option value="year">Year</option>
+                    </select>
+                    <select id="toUnitTime" size="15" class="toList">  
+                        <option value="second">Second</option> 
+                        <option value="millisecond">Millisecond</option> 
+                        <option value="microsecond">Microsecond</option> 
+                        <option value="nanosecond">Nanosecond</option> 
+                        <option value="picosecond">Picosecond</option>  
+                        <option value="minute">Minute</option>
+                        <option value="hour">Hour</option>  
+                        <option value="day">Day</option> 
+                        <option value="week">Week</option> 
+                        <option value="month">Month</option> 
+                        <option value="year">Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 | Anand Kumar</p>
+    </footer>
+    
+    <script src="main.js" defer></script>
+</body>
+</html>
